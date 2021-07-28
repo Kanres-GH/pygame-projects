@@ -257,7 +257,7 @@ class MAIN:
         while True:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
-                    data['current self.score'] = self.score
+                    data['current score'] = self.score
                     pg.quit()
                     sys.exit()
                 if event.type == pg.MOUSEBUTTONDOWN:
@@ -324,7 +324,7 @@ class MAIN:
         while True:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
-                    data['current self.score'] = self.score
+                    data['current score'] = self.score
                     with open('config.txt', 'w') as config_file:
                         json.dump(data, config_file)
                     pg.quit()
@@ -419,7 +419,7 @@ class MAIN:
             #pg.draw.rect(screen, (103, 136, 20), exit_button)
             for event in pg.event.get():
                 if event.type == pg.QUIT:
-                    data['current self.score'] = self.score
+                    data['current score'] = self.score
                     data['died before'] = died_before
                     with open("config.txt", "w") as config_file:
                         json.dump(data, config_file)
@@ -465,7 +465,7 @@ class MAIN:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     died_before = False
-                    data['current self.score'] = self.score
+                    data['current score'] = self.score
                     data['died before'] = died_before
                     #data['direction'] = self.snake.direction
                     with open("config.txt", "w") as config_file:
@@ -669,7 +669,7 @@ class MAIN:
         while died:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
-                    data['current self.score'] = self.score
+                    data['current score'] = self.score
                     data['died before'] = True
                     with open("config.txt", "w") as config_file:
                         json.dump(data, config_file)
@@ -769,7 +769,7 @@ while running:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             data['died before'] = died_before
-            data['current self.score'] = main_game.score
+            data['current score'] = main_game.score
             #data['direction'] = main_game.snake.direction
             with open("config.txt", "w") as config_file:
                 json.dump(data, config_file)
