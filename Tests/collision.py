@@ -19,7 +19,7 @@ side = 100
 x = (WIN_WIDTH - side) // 2
 y = (WIN_HEIGHT - side) // 2
 photo = pg.image.load(r'c:/Users/ktnrg/OneDrive/Документы/Python/pygame/heh.jpg')
-background_photo = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/inf_bg.png")
+background_photo = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/crappy bird/inf_bg.png")
 background_photo = pg.transform.scale(background_photo, (WIN_WIDTH, WIN_HEIGHT))
 photo = pg.transform.scale(photo, (side, side))
 
@@ -50,5 +50,7 @@ while running:
             sys.exit()
     if photo_rect.colliderect(another_rect):
         print(1)
+    screen.blit(photo, photo_rect)
+    pg.draw.rect(screen, ORANGE, another_rect)
     pg.display.update()
     clock.tick(FPS)
