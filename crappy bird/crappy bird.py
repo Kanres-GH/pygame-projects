@@ -20,9 +20,9 @@ pg.display.set_caption('ЗДЕСЬ МОГЛА БЫ БЫТЬ ВАША РЕКЛА�
 
 side = 50
 photo = pg.image.load(r'c:/Users/ktnrg/OneDrive/Документы/Python/pygame/heh.jpg')
-background_photo = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/inf_bg.png")
-pipe = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/pipe.png")
-pipe2 = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/pipe.png")
+background_photo = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/crappy bird/inf_bg.png")
+pipe = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/crappy bird/pipe.png")
+pipe2 = pg.image.load(r"c:/Users/ktnrg/OneDrive/Документы/Python/pygame/crappy bird/pipe.png")
 background_photo = pg.transform.scale(background_photo, (WIN_WIDTH, WIN_HEIGHT))
 photo = pg.transform.scale(photo, (side, side))
 pipe = pg.transform.scale(pipe, (pipe.get_width() // 2, pipe.get_height() // 2))

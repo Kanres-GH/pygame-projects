@@ -8,8 +8,7 @@ WHITE = (255, 255, 255)
 ORANGE = (255, 150, 100)
  
 clock = pygame.time.Clock()
-sc = pygame.display.set_mode(
-    (WIN_WIDTH, WIN_HEIGHT))
+sc = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
  
 # радиус будущего круга
 r = 30
@@ -27,8 +26,7 @@ while 1:
     # заливаем фон
     sc.fill(WHITE)
     # рисуем круг
-    pygame.draw.circle(sc, ORANGE,
-                       (x, y), r)
+    pygame.draw.circle(sc, ORANGE, (x, y), r)
     # обновляем окно
     pygame.display.update()
  

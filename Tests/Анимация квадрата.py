@@ -8,8 +8,7 @@ WHITE = (255, 255, 255)
 ORANGE = (255, 150, 100)
  
 clock = pygame.time.Clock()
-sc = pygame.display.set_mode(
-    (WIN_WIDTH, WIN_HEIGHT))
+sc = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
  
 
 a = 50
